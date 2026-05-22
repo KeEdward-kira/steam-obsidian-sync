@@ -1,0 +1,13 @@
+.env
+
+steam/Steam Games/
+
+.obsidian/workspace.json
+.obsidian/plugins/
+.obsidian/core-plugins.json
+.obsidian/app.json
+
+__pycache__/
+*.pyc
+.DS_Store
+Thumbs.db

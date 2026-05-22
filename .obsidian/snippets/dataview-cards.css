@@ -1,0 +1,136 @@
+.callout[data-callout="cards"] {
+  background: transparent;
+  border: none;
+  box-shadow: none;
+  padding: 0;
+  margin: 0;
+}
+
+.callout[data-callout="cards"] .callout-title {
+  display: none;
+}
+
+.callout[data-callout="cards"] .callout-content {
+  padding: 0;
+}
+
+.callout[data-callout="cards"] table.dataview.table-view-table {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  padding: 0;
+  width: 100%;
+  border: none;
+  table-layout: auto;
+}
+
+.callout[data-callout="cards"] table.dataview.table-view-table thead {
+  display: none;
+}
+
+.callout[data-callout="cards"] table.dataview.table-view-table tbody {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  width: 100%;
+}
+
+.callout[data-callout="cards"] table.dataview.table-view-table tr {
+  display: flex;
+  flex-direction: column;
+  width: calc(25% - 12px);
+  min-width: 200px;
+  border-radius: 12px;
+  overflow: hidden;
+  background: var(--background-secondary);
+  border: 1px solid var(--background-modifier-border);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  margin: 0;
+}
+
+.callout[data-callout="cards"] table.dataview.table-view-table tr:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12);
+}
+
+.callout[data-callout="cards"] table.dataview.table-view-table td {
+  border: none !important;
+  padding: 0 !important;
+  margin: 0;
+  line-height: 1.4;
+}
+
+.callout[data-callout="cards"] table.dataview.table-view-table td:first-child {
+  width: 100%;
+}
+
+.callout[data-callout="cards"] table.dataview.table-view-table td:first-child img {
+  width: 100%;
+  height: auto;
+  display: block;
+  aspect-ratio: 460 / 215;
+  object-fit: cover;
+}
+
+.callout[data-callout="cards"] table.dataview.table-view-table td:first-child span {
+  display: block;
+  width: 100%;
+}
+
+.callout[data-callout="cards"] table.dataview.table-view-table td:first-child span img {
+  width: 100%;
+  height: auto;
+  display: block;
+  aspect-ratio: 460 / 215;
+  object-fit: cover;
+}
+
+.callout[data-callout="cards"] table.dataview.table-view-table td:nth-child(2) {
+  padding: 8px 12px 2px !important;
+  font-weight: 600;
+  font-size: 0.95em;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.callout[data-callout="cards"] table.dataview.table-view-table td:nth-child(2) a {
+  text-decoration: none;
+}
+
+.callout[data-callout="cards"] table.dataview.table-view-table td:nth-child(n+3) {
+  padding: 2px 12px !important;
+  font-size: 0.82em;
+  color: var(--text-muted);
+}
+
+.callout[data-callout="cards"] table.dataview.table-view-table td:last-child {
+  padding-bottom: 8px !important;
+}
+
+.callout[data-callout="cards"] table.dataview.table-view-table td:nth-child(n+3) .tag {
+  background: var(--background-modifier-hover);
+  border-radius: 4px;
+  padding: 1px 6px;
+  font-size: 0.9em;
+  margin: 1px 2px;
+  display: inline-block;
+}
+
+@media (max-width: 1200px) {
+  .callout[data-callout="cards"] table.dataview.table-view-table tr {
+    width: calc(33.33% - 11px);
+  }
+}
+
+@media (max-width: 800px) {
+  .callout[data-callout="cards"] table.dataview.table-view-table tr {
+    width: calc(50% - 8px);
+  }
+}
+
+@media (max-width: 500px) {
+  .callout[data-callout="cards"] table.dataview.table-view-table tr {
+    width: 100%;
+  }
+}
